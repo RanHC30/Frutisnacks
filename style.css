@@ -229,7 +229,7 @@ footer {
     width: 100%;
     aspect-ratio: 16 / 7; /* Modern way to ensure shape, fallback with min-height */
     min-height: 200px;
-    background-image: url('/pics/fondo-productos.jpg'); /* Use absolute path if possible */
+    background-image: url('pics/fondo-productos.jpg'); /* Use absolute path if possible */
     background-size: cover;
     background-position: center;
     margin-top: 2em;
@@ -249,3 +249,4 @@ footer {
         box-shadow: 0 0 5px #0002;
     }
 }
+
