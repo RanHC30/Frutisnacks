@@ -199,3 +199,33 @@ footer {
     max-height: 200px;
     margin-top: 10px;
 }
+
+/* Mini Carrusel */
+.mini-carousel-container {
+    width: 100%;
+    max-width: 600px;
+    height: 250px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #0003;
+}
+
+.mini-carousel {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: miniSlide 9s infinite linear;
+}
+
+.mini-carousel img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@keyframes miniSlide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
