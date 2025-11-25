@@ -32,7 +32,19 @@
         <img src="pics/obj3.jpg">
     </div>
 </div>
+<script>
+    const miniCarousel = document.querySelector(".mini-carousel");
+    const miniSlides = document.querySelectorAll(".mini-carousel img");
+    let miniIndex = 0;
 
+    function runMiniCarousel() {
+        miniIndex++;
+        if (miniIndex >= miniSlides.length) miniIndex = 0;
+        miniCarousel.style.transform = `translateX(-${miniIndex * 100}%)`;
+    }
+
+    setInterval(runMiniCarousel, 2500);
+</script>
     
 <footer>Contáctenos al : 2134-9038 o en nuestras redes FrutiSnacksOficial 
       <br>© 2025 FrutiSnacks – Snacks Naturales</br>
@@ -40,6 +52,7 @@
 
 </body>
 </html>
+
 
 
 
