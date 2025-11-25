@@ -227,9 +227,9 @@ footer {
 /* Fondo fotográfico */
 .producto-fondo {
     width: 100%;
-    aspect-ratio: 16 / 7; /* Modern way to ensure shape, fallback with min-height */
+    aspect-ratio: 16 / 7;
     min-height: 200px;
-    background-image: url('pics/fondo-productos.jpg'); /* Use absolute path if possible */
+    background-image: url('pics/productos.jpg');
     background-size: cover;
     background-position: center;
     margin-top: 2em;
@@ -240,7 +240,6 @@ footer {
     justify-content: center;
 }
 
-/* Responsive adjustments */
 @media (max-width: 600px) {
     .producto-fondo {
         margin-top: 1em;
