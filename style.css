@@ -227,22 +227,25 @@ footer {
 /* Fondo fotográfico */
 .producto-fondo {
     width: 100%;
-    height: 350px;
-    background-image: url('pics/fondo-productos.jpg');
+    aspect-ratio: 16 / 7; /* Modern way to ensure shape, fallback with min-height */
+    min-height: 200px;
+    background-image: url('/pics/fondo-productos.jpg'); /* Use absolute path if possible */
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    margin-top: 25px;
-    border-radius: 12px;
+    margin-top: 2em;
+    border-radius: 1em;
     box-shadow: 0 0 10px #0003;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.producto-texto {
-    background: #ffffffdd;
-    padding: 20px 30px;
-    border-radius: 12px;
-    text-align: center;
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .producto-fondo {
+        margin-top: 1em;
+        border-radius: 0.5em;
+        min-height: 120px;
+        box-shadow: 0 0 5px #0002;
+    }
 }
