@@ -248,3 +248,27 @@ footer {
         box-shadow: 0 0 5px #0002;
     }
 }
+
+.sostenibilidad-fondo {
+    width: 100%;
+    aspect-ratio: 16 / 7;
+    min-height: 200px;
+    background-image: url('pics/sostenibilidad.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: 2em;
+    border-radius: 1em;
+    box-shadow: 0 0 10px #0003;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .sostenibilidad-fondo {
+        margin-top: 1em;
+        border-radius: 0.5em;
+        min-height: 120px;
+        box-shadow: 0 0 5px #0002;
+    }
+}
