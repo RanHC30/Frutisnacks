@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrutiSnacks - Inicio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>FrutiSnacks 🍍</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="objetivo.html">Objetivo</a>
+    <a href="producto.html">Producto</a>
+    <a href="sostenibilidad.html">Sostenibilidad</a>
+</nav>
+
+<div class="carousel-container">
+    <div class="carousel" id="carousel">
+        <img src="pics/fruta7.jpg" alt="">
+        <img src="pics/fruta4.jpg" alt="">
+        <img src="pics/fruta1.jpg" alt="">
+    </div>
+</div>
+
+<section>
+    <h2>Bienvenidos</h2>
+    <p>Explora nuestro proyecto FrutiSnacks y descubre cómo estamos transformando la alimentación saludable.</p>
+</section>
+
+<footer>Contáctenos al : 2134-9038 o en nuestras redes FrutiSnacksOficial 
+      <br>© 2025 FrutiSnacks – Snacks Naturales</br>
+</footer>
+<script>
+let index = 0;
+
+function moveCarousel() {
+    const carousel = document.getElementById("carousel");
+    const images = carousel.children.length;
+
+    index++;
+    if (index >= images) {
+        index = 0;              // ← vuelve al inicio sin pasarse
+    }
+
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+}
+
+setInterval(moveCarousel, 3000); // 3 segundos
+</script>
+
+</body>
+</html>
